@@ -7,7 +7,7 @@ class Dot:
     ship_dot = "# |"
     destroyed_ship_dot = "X |"
     missed_dot = "T |"
-    hidden_ship_dot = "O |"
+    hidden_ship_dot = "О |"
 
     def __init__(self, x, y):
         self.x = x
@@ -250,7 +250,7 @@ class User(Player):
             continue
         # Данный алгоритм с необходим, чтобы обработать все исключения, включая ввод букв. Реализован со всеми input()
 
-        return Dot(int(dot_y), int(dot_x))
+        return Dot(int(dot_x), int(dot_y))
 
     @staticmethod
     def ask_ship(length):  # Функция спрашивает и передает данные корабля
